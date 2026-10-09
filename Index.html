@@ -2,44 +2,261 @@
 <html lang="gu">
 <head>
     <meta charset="UTF-8">
-    <title>Shree Krishnapur Kantha Vibhag Vidyalaya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રી કૃષ્ણપુર કાંઠા વિભાગ વિદ્યાલય</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; }
-        header { background-color: #003366; color: white; text-align: center; padding: 20px; }
-        nav { background-color: #004080; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
-        .container { padding: 20px; text-align: center; }
-        .box { background: white; padding: 20px; margin: 15px auto; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        footer { background-color: #003366; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        /* Header & Hero Section */
+        header {
+            background: linear-gradient(rgba(0, 40, 80, 0.9), rgba(0, 20, 40, 0.9)), url('https://i.ibb.co/1G08v3S/image.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        header h3 { font-size: 1.1rem; color: #ffcc00; margin-bottom: 8px; }
+        header h1 { font-size: 2.3rem; margin-bottom: 8px; }
+        header p { font-size: 1rem; color: #e0e0e0; }
+
+        /* Navigation */
+        nav { background-color: #002244; padding: 12px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav a { color: white; margin: 0 12px; text-decoration: none; font-size: 0.95rem; font-weight: 600; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+
+        /* Container & Sections */
+        .container { max-width: 1100px; margin: auto; padding: 25px 15px; }
+        section { margin-bottom: 35px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+        h2 { color: #003366; border-bottom: 3px solid #ffcc00; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
+
+        /* About Grid */
+        .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 25px; align-items: center; }
+        @media(max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+        .about-img img { width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+
+        /* Results Box */
+        .result-box { display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; gap: 15px; }
+        .result-item { background: #003366; color: white; padding: 15px 20px; border-radius: 8px; flex: 1; min-width: 180px; }
+        .result-item h3 { color: #ffcc00; font-size: 1.8rem; margin-bottom: 5px; }
+
+        /* Gallery Grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .gallery-card { background: #fff; border: 1px solid #eaeaea; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 8px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .gallery-card:hover { transform: translateY(-5px); }
+        .gallery-card img { width: 100%; height: 200px; object-fit: cover; }
+        .gallery-card .card-body { padding: 15px; }
+        .gallery-card h4 { color: #003366; font-size: 1.1rem; margin-bottom: 5px; }
+        .gallery-card p { color: #666; font-size: 0.9rem; }
+
+        /* Staff Grid */
+        .staff-category { margin-bottom: 25px; }
+        .staff-category h3 { color: #004080; margin-bottom: 15px; font-size: 1.2rem; border-left: 4px solid #ffcc00; padding-left: 10px; }
+        .staff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .staff-card { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 15px; border-radius: 8px; text-align: center; }
+        .staff-card h4 { color: #003366; margin-bottom: 5px; font-size: 1rem; }
+        .staff-card p { color: #666; font-size: 0.85rem; }
+
+        /* Footer */
+        footer { background-color: #002244; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>શ્રી કાંકરા વિભાગ કેળવણી મંડળ સંચાલિત</h1>
-    <h2>શ્રી કૃષ્ણપુર કાંઠા વિભાગ વિદ્યાલય, કૃષ્ણપુર</h2>
-    <p>તા. જલાલપોર, જી. નવસારી (સ્થાપના: ૧૯૭૧)</p>
+    <h3>શ્રી કાંકરા વિભાગ કેળવણી મંડળ સંચાલિત</h3>
+    <h1>શ્રી કૃષ્ણપુર કાંઠા વિભાગ વિદ્યાલય</h1>
+    <p>કૃષ્ણપુર, તા. જલાલપોર, જી. નવસારી (સ્થાપના: ૧૯૭૧ | રજી. નં.: E 384 નવસારી)[span_0](start_span)[span_0](end_span)</p>
 </header>
 
 <nav>
-    <a href="#">હોમ</a>
-    <a href="#">અમારા વિશે</a>
-    <a href="#">સ્ટાફ પરિચય</a>
-    <a href="#">પરિણામ</a>
-    <a href="#">સંપર્ક</a>
+    <a href="#about">અમારા વિશે</a>
+    <a href="#results">પરિણામ</a>
+    <a href="#gallery">શાળાકીય પ્રવૃત્તિઓ અને ફોટા</a>
+    <a href="#staff">સ્ટાફ પરિચય</a>
+    <a href="#contact">સંપર્ક</a>
 </nav>
 
 <div class="container">
-    <div class="box">
-        <h3>પ્રવેશ કાર્ય શરૂ - વર્ષ ૨૦૨૬-૨૭</h3>
-        <p>ધોરણ 9 થી 12 (સામાન્ય પ્રવાહ અને વિજ્ઞાન પ્રવાહ)</p>
-        <p>મારી શાળામાં તમારા બાળકનું એડમિશન કરાવો અને ઉજ્જવળ ભવિષ્યની શરૂઆત કરો.</p>
-    </div>
 
-    <div class="box">
-        <h3>શાળાનું ઉત્કૃષ્ટ પરિણામ (માર્ચ ૨૦૨૫)</h3>
-        <p>🔬 વિજ્ઞાન પ્રવાહ: <b>91.43%</b> | 📚 ધોરણ 10: <b>90.00%</b> | 📖 સામાન્ય પ્રવાહ: <b>95.00%</b></p>
-    </div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>શાળા વિશે માહિતી</h2>
+        <div class="about-grid">
+            <div>
+                <p>શ્રી કૃષ્ણપુર કાંઠા વિભાગ વિદ્યાલય એ જલાલપોર તાલુકાના કૃષ્ણપુર ગામે આવેલી અગ્રણી શિક્ષણ સંસ્થા છે. આ શાળા શ્રી કાંકરા વિભાગ કેળવણી મંડળ દ્વારા સંચાલિત છે[span_1](start_span)[span_1](end_span), જે વર્ષ ૧૯૭૧ થી ગ્રામીણ વિસ્તારના બાળકોને ઉત્કૃષ્ટ શિક્ષણ આપી રહી છે.</p>
+                <p style="margin-top: 12px;">અમારી શાળામાં ધોરણ 9 થી 12 (સામાન્ય પ્રવાહ અને વિજ્ઞાન પ્રવાહ - ગુજરાતી માધ્યમ) માટે આધુનિક વર્ગખંડો, પ્રયોગશાળાઓ અને પ્રવૃત્તિઓનું ઉત્તમ વાતાવરણ પૂરું પાડવામાં આવે છે[span_2](start_span)[span_2](end_span).</p>
+            </div>
+            <div class="about-img">
+                <img src="https://i.ibb.co/1G08v3S/image.png" alt="શાળાનું મકાન">
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results">
+        <h2>બોર્ડ પરીક્ષા પરિણામ (માર્ચ ૨૦૨૫)</h2>
+        <div class="result-box">
+            <div class="result-item">
+                <h3>91.43%</h3>
+                <p>વિજ્ઞાન પ્રવાહ[span_3](start_span)[span_3](end_span)</p>
+            </div>
+            <div class="result-item">
+                <h3>95.00%</h3>
+                <p>સામાન્ય પ્રવાહ[span_4](start_span)[span_4](end_span)</p>
+            </div>
+            <div class="result-item">
+                <h3>90.00%</h3>
+                <p>ધોરણ 10[span_5](start_span)[span_5](end_span)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery & Activities Section -->
+    <section id="gallery">
+        <h2>શાળાકીય પ્રવૃત્તિઓ અને ઝાંખી</h2>
+        <div class="gallery-grid">
+            
+            <div class="gallery-card">
+                <img src="https://i.ibb.co/v4S9j2Q5/image-8.png" alt="વિજ્ઞાન પ્રદર્શન">
+                <div class="card-body">
+                    <h4>🔬 વિજ્ઞાન પ્રદર્શન</h4>
+                    <p>વિદ્યાર્થીઓ દ્વારા તૈયાર કરાયેલા વિજ્ઞાન અને ટેકનોલોજીના અદભુત પ્રોજેક્ટ્સ અને મોડેલ્સ.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="https://i.ibb.co/6c2rV8J9/image-9.png" alt="પ્રાર્થના સભા અને પ્રવૃત્તિ">
+                <div class="card-body">
+                    <h4>🇮🇳 દૈનિક પ્રાર્થના તથા શૈક્ષણિક પ્રવૃત્તિ</h4>
+                    <p>શાળાના પ્રાંગણમાં શિસ્તબદ્ધ રીતે યોજાતી પ્રાર્થના સભા અને વિશેષ જાગૃતિ અભિયાન.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="https://i.ibb.co/9mr3K4tV/image-13.png" alt="પ્રયોગશાળામાં માર્ગદર્શન">
+                <div class="card-body">
+                    <h4>🧪 સાયન્સ લેબ પ્રેક્ટિકલ</h4>
+                    <p>શિક્ષકશ્રીના માર્ગદર્શન હેઠળ પ્રયોગશાળામાં ઉત્સાહપૂર્વક પ્રયોગો કરતા વિદ્યાર્થીઓ.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="https://i.ibb.co/ns4r1f28/image-15.png" alt="વોલીબોલ ચેમ્પિયન ટીમ">
+                <div class="card-body">
+                    <h4>🏆 નવસારી જિલ્લા ખેલ મહાકુંભ</h4>
+                    <p>અંડર-૧૭ વોલીબોલ ચેમ્પિયન બનેલી આપણી શાળાની વિજેતા ખેલાડીઓની ટીમ.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="https://i.ibb.co/fY6P340c/image-12.png" alt="ધ્વજવંદન સમારોહ">
+                <div class="card-body">
+                    <h4>🌟 રાષ્ટ્રીય પર્વ અને ઉત્સવ</h4>
+                    <p>રાષ્ટ્રીય પર્વ નિમિત્તે શાળામાં યોજાયેલ ભવ્ય ધ્વજવંદન અને સન્માન સમારોહ.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="https://i.ibb.co/xq5Q89GZ/image-14.png" alt="સમગ્ર સ્ટાફ અને વિદ્યાર્થીઓ">
+                <div class="card-body">
+                    <h4>👥 શાળા પરિવાર</h4>
+                    <p>આચાર્યશ્રી, સ્ટાફગણ અને વિદ્યાર્થીઓનો સમૂહ ફોટો.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff">
+        <h2>શૈક્ષણિક સ્ટાફ પરિચય</h2>
+        
+        <div class="staff-category">
+            <h3>આચાર્યશ્રી</h3>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <h4>સંજયભાઈ</h4>
+                    <p>આચાર્યશ્રી[span_6](start_span)[span_6](end_span)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="staff-category">
+            <h3>માધ્યમિક વિભાગ</h3>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <h4>કૌશિકાબેન</h4>
+                    <p>ગણિત, વિજ્ઞાન[span_7](start_span)[span_7](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>ભાવિનભાઈ</h4>
+                    <p>સામાજિક વિજ્ઞાન, હિન્દી, કમ્પ્યુટર[span_8](start_span)[span_8](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>કિશોરભાઈ</h4>
+                    <p>અંગ્રેજી, ગુજરાતી[span_9](start_span)[span_9](end_span)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="staff-category">
+            <h3>ઉચ્ચતર માધ્યમિક વિભાગ - વિજ્ઞાન પ્રવાહ</h3>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <h4>દિપકભાઈ</h4>
+                    <p>ભૌતિક વિજ્ઞાન[span_10](start_span)[span_10](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>જીનલબેન</h4>
+                    <p>રસાયણ વિજ્ઞાન[span_11](start_span)[span_11](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>નિયતિબેન</h4>
+                    <p>જીવ વિજ્ઞાન[span_12](start_span)[span_12](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>વૃતિકાબેન</h4>
+                    <p>ગણિત[span_13](start_span)[span_13](end_span)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="staff-category">
+            <h3>ઉચ્ચતર માધ્યમિક વિભાગ - સામાન્ય પ્રવાહ</h3>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <h4>અરવિંદભાઈ</h4>
+                    <p>સંસ્કૃત, ગુજરાતી[span_14](start_span)[span_14](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>શિલ્પાબેન</h4>
+                    <p>મનોવિજ્ઞાન, ભૂગોળ[span_15](start_span)[span_15](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>રાજેશભાઈ</h4>
+                    <p>સમાજશાસ્ત્ર, ઇતિહાસ[span_16](start_span)[span_16](end_span)</p>
+                </div>
+                <div class="staff-card">
+                    <h4>કિરણબેન</h4>
+                    <p>અંગ્રેજી, ગુજરાતી[span_17](start_span)[span_17](end_span)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>સંપર્ક અને પ્રવેશ માહિતી</h2>
+        <p><b>સરનામું:</b> મુ. કૃષ્ણપુર, તા. જલાલપોર, જી. નવસારી</p>
+        <p style="margin-top: 10px;"><b>વધુ માહિતી તથા પ્રવેશ માટે સંપર્ક કરો:</b></p>
+        <ul style="list-style: none; margin-top: 10px; line-height: 1.8;">
+            <li>📞 સંજયભાઈ (આચાર્ય): 99243 87530[span_18](start_span)[span_18](end_span)</li>
+            <li>📞 ભાવિન સર: 99986 33624[span_19](start_span)[span_19](end_span)</li>
+            <li>📞 દિપક સર: 96010 72672[span_20](start_span)[span_20](end_span)</li>
+            <li>📧 ઈમેલ: ictnav051@gmail.com[span_21](start_span)[span_21](end_span)</li>
+        </ul>
+    </section>
+
 </div>
 
 <footer>
