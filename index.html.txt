@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <title>Shree Krishnapur Kantha Vibhag Vidyalaya</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; }
+        header { background-color: #003366; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #004080; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
+        .container { padding: 20px; text-align: center; }
+        .box { background: white; padding: 20px; margin: 15px auto; width: 80%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        footer { background-color: #003366; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>શ્રી કાંકરા વિભાગ કેળવણી મંડળ સંચાલિત</h1>
+    <h2>શ્રી કૃષ્ણપુર કાંઠા વિભાગ વિદ્યાલય, કૃષ્ણપુર</h2>
+    <p>તા. જલાલપોર, જી. નવસારી (સ્થાપના: ૧૯૭૧)</p>
+</header>
+
+<nav>
+    <a href="#">હોમ</a>
+    <a href="#">અમારા વિશે</a>
+    <a href="#">સ્ટાફ પરિચય</a>
+    <a href="#">પરિણામ</a>
+    <a href="#">સંપર્ક</a>
+</nav>
+
+<div class="container">
+    <div class="box">
+        <h3>પ્રવેશ કાર્ય શરૂ - વર્ષ ૨૦૨૬-૨૭</h3>
+        <p>ધોરણ 9 થી 12 (સામાન્ય પ્રવાહ અને વિજ્ઞાન પ્રવાહ)</p>
+        <p>મારી શાળામાં તમારા બાળકનું એડમિશન કરાવો અને ઉજ્જવળ ભવિષ્યની શરૂઆત કરો.</p>
+    </div>
+
+    <div class="box">
+        <h3>શાળાનું ઉત્કૃષ્ટ પરિણામ (માર્ચ ૨૦૨૫)</h3>
+        <p>🔬 વિજ્ઞાન પ્રવાહ: <b>91.43%</b> | 📚 ધોરણ 10: <b>90.00%</b> | 📖 સામાન્ય પ્રવાહ: <b>95.00%</b></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 શ્રી કૃષ્ણપુર કાંઠા વિભાગ વિદ્યાલય. સર્વાધિકાર સુરક્ષિત.</p>
+</footer>
+
+</body>
+</html>
